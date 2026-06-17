@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: #F0F7FF;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+/* Vibrant Palette - Comic Aesthetics */
+.comic-border {
+  border: 4px solid #1A1A1A;
+  box-shadow: 6px 6px 0px 0px #1A1A1A;
+}
+
+.comic-border-sm {
+  border: 3px solid #1A1A1A;
+  box-shadow: 4px 4px 0px 0px #1A1A1A;
+}
+
+.comic-border-xs {
+  border: 2px solid #1A1A1A;
+  box-shadow: 3px 3px 0px 0px #1A1A1A;
+}
+
+.pill-btn {
+  border: 3px solid #1A1A1A;
+  box-shadow: 4px 4px 0px 0px #1A1A1A;
+  transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.15s ease;
+}
+
+.pill-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px 0px #1A1A1A;
+}
+
+.pill-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0px 0px #1A1A1A;
+}
+
+.pill-btn-sm {
+  border: 2px solid #1A1A1A;
+  box-shadow: 3px 3px 0px 0px #1A1A1A;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.pill-btn-sm:hover {
+  transform: translate(-0.5px, -0.5px);
+  box-shadow: 3.5px 3.5px 0px 0px #1A1A1A;
+}
+
+.pill-btn-sm:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px #1A1A1A;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "DanaLand LMS",
+  "description": "پلتفرم آموزشی تعاملی و بازی‌محور دانا لند برای دانش‌آموزان ابتدایی",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
